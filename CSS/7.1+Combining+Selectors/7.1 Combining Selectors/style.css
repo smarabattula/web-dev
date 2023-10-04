@@ -1,0 +1,27 @@
+/* Write your code here: */
+
+ /* Grouping Elements */
+h1, h2
+{color: blueviolet;}
+
+/* Child Element */
+.box > .done
+{
+    color: firebrick;
+}
+
+/* Descendant Element */
+.box li
+{
+    color: rgb(250, 0, 250);
+}
+
+/* Chaining Elements */
+li.done{
+    color:green;
+}
+
+/* Multiple Combinations */
+ul p.done{
+    font-size: 0.5rem;
+}
