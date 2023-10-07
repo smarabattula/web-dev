@@ -1,0 +1,122 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+#creative{
+  color: forestgreen;
+  display: inline-block;
+}
+
+.tile-image{
+  width:300px;
+  height:auto;
+  display: inline-block;
+  margin-right: 50px;
+}
+.card{
+  width: 45%;
+}
+
+.card-title{
+  margin-top: 0px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+footer {
+  clear: both;
+  text-align: right;
+  color: midnightblue;
+}
+
+.toggle{
+  float: right;
+  padding-right: 20px;;
+}
+body.dark {background-color: #292c35;} /* #9b59b6 */
+
+body.dark h1,body.dark,body.dark footer, body.dark .support a {color: #fff;}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  left: 90%;
+  top:0px;
+  padding: 5px;
+  cursor: pointer;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+
+@media (max-width: 680px)
+{
+  .logo{
+    width: 40%;
+  }
+  h1{
+    font-size: 3.5rem;
+  }
+  .card{
+    width:100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  .tile-image{
+    width:100%;
+    margin-right: 0px;
+    display: inline;
+    object-fit: cover;
+  }
+
+}
+
+
