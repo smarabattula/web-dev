@@ -22,7 +22,7 @@ function makeSound(i) {
     document.querySelector("."+i).classList.add("pressed");
     setTimeout(function(){
         document.querySelector("."+i).classList.remove("pressed");
-            },100);
+            },1100);
     audio.play();
 
 }

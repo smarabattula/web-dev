@@ -45,9 +45,11 @@ function checkAnswer(colorPressed,pos){
     setTimeout(function(){
         nextSequence();
     },1000);
-    id = -1;
+    id = 0;
     }
+    else{
     id += 1;
+    }
 }
     else{
      failure();
@@ -77,11 +79,4 @@ $(".btn").click(function(){
     buttonPressed($("#"+colorPressed));
     checkAnswer(colorPressed,id);
 });
-
-
-
-
-
-
-
 

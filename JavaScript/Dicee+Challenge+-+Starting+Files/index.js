@@ -11,6 +11,7 @@ if (p1 > p2){
 else if (p1 < p2){
     result = "Player 2 Wins!🚩";
 }
+
 document.getElementsByClassName("img1")[0].setAttribute("src", './images/dice'+String(p1)+'.png');
 document.querySelector(".img2").setAttribute("src", './images/dice'+String(p2)+'.png');
 
