@@ -12,4 +12,3 @@ Topics Completed:
 - MongoDB
 - Git
 - Databases
-- 
